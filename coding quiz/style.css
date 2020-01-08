@@ -1,0 +1,44 @@
+html,
+body {
+  background-color: rgb(69, 23, 82);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+h1,
+h2,
+a,
+span {
+  color: rgb(180, 40, 40);
+}
+
+#score-list {
+  font-size: 1.2rem;
+  color: rgb(76, 150, 58);
+}
+ol {
+  list-style: none;
+  counter-reset: li;
+}
+
+li {
+  counter-increment: li;
+}
+
+li::before {
+  content: "." counter(li);
+  color: rgb(69, 70, 182);
+  display: inline-block;
+  width: 1rem;
+  margin-left: -1.5rem;
+  margin-right: 0.5rem;
+  text-align: right;
+  direction: rtl;
+}
+
+hr {
+  height: 2px;
+  background-color: rgb(94, 17, 29);
+}
+
+#scoresTitle {
+  padding-left: 1rem;
+}
